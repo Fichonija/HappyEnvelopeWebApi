@@ -16,11 +16,11 @@ namespace HappyEnvelopeWebApi.Models.Main
         [ForeignKey("salary")]
         public int salary_id { get; set; }
         public Salary salary { get; set; }
-        public bool attending { get; set; }
+        public int attending { get; set; }
         [ForeignKey("relationship")]
         public int relationship_id { get; set; }
         public Relationship relationship { get; set; }
-        public bool festivities { get; set; }
+        public int festivities { get; set; }
         [ForeignKey("locale")]
         public int locale_id { get; set; }
         public Locale locale { get; set; }
