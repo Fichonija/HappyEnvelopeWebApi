@@ -206,14 +206,37 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\Codebook\EventsController.cs" />
+    <Compile Include="Controllers\Codebook\LocalesController.cs" />
+    <Compile Include="Controllers\Codebook\RelationshipsController.cs" />
+    <Compile Include="Controllers\Codebook\SalariesController.cs" />
+    <Compile Include="Controllers\Codebook\SeasonsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202006091640577_InitialCreate.cs" />
+    <Compile Include="Migrations\202006091640577_InitialCreate.Designer.cs">
+      <DependentUpon>202006091640577_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202006141032475_initial.cs" />
+    <Compile Include="Migrations\202006141032475_initial.Designer.cs">
+      <DependentUpon>202006141032475_initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202006141034568_Codebook.cs" />
+    <Compile Include="Migrations\202006141034568_Codebook.Designer.cs">
+      <DependentUpon>202006141034568_Codebook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
+    <Compile Include="Models\Codebook\Event.cs" />
+    <Compile Include="Models\Codebook\Locale.cs" />
+    <Compile Include="Models\Codebook\Relationship.cs" />
+    <Compile Include="Models\Codebook\Salary.cs" />
+    <Compile Include="Models\Codebook\Season.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
@@ -307,6 +330,17 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202006091640577_InitialCreate.resx">
+      <DependentUpon>202006091640577_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006141032475_initial.resx">
+      <DependentUpon>202006141032475_initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006141034568_Codebook.resx">
+      <DependentUpon>202006141034568_Codebook.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

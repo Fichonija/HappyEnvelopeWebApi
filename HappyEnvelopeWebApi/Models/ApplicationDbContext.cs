@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNet.Identity.EntityFramework;
+﻿using HappyEnvelopeWebApi.Models.Codebook;
+using Microsoft.AspNet.Identity.EntityFramework;
+using System.Data.Entity;
 
 namespace HappyEnvelopeWebApi.Models
 {
@@ -13,5 +15,12 @@ namespace HappyEnvelopeWebApi.Models
         {
             return new ApplicationDbContext();
         }
+
+        public DbSet<Salary> Salaries { get; set; }
+        public DbSet<Relationship> Relationships { get; set; }
+        public DbSet<Locale> Locales{ get; set; }
+        public DbSet<Event> Events { get; set; }
+        public DbSet<Season> Seasons { get; set; }
+
     }
 }
