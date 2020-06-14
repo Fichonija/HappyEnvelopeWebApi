@@ -212,6 +212,9 @@
     <Compile Include="Controllers\Codebook\SalariesController.cs" />
     <Compile Include="Controllers\Codebook\SeasonsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\Main\CalculationsController.cs" />
+    <Compile Include="Controllers\Main\GiftsController.cs" />
+    <Compile Include="Controllers\Main\WeddingsController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -228,6 +231,30 @@
     <Compile Include="Migrations\202006141034568_Codebook.Designer.cs">
       <DependentUpon>202006141034568_Codebook.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202006141059143_Gift.cs" />
+    <Compile Include="Migrations\202006141059143_Gift.Designer.cs">
+      <DependentUpon>202006141059143_Gift.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202006141107017_Calculation.cs" />
+    <Compile Include="Migrations\202006141107017_Calculation.Designer.cs">
+      <DependentUpon>202006141107017_Calculation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202006141110563_Wedding.cs" />
+    <Compile Include="Migrations\202006141110563_Wedding.Designer.cs">
+      <DependentUpon>202006141110563_Wedding.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202006141209062_Calculation1.cs" />
+    <Compile Include="Migrations\202006141209062_Calculation1.Designer.cs">
+      <DependentUpon>202006141209062_Calculation1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202006141233116_Calculation2.cs" />
+    <Compile Include="Migrations\202006141233116_Calculation2.Designer.cs">
+      <DependentUpon>202006141233116_Calculation2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202006141516190_Wedding1.cs" />
+    <Compile Include="Migrations\202006141516190_Wedding1.Designer.cs">
+      <DependentUpon>202006141516190_Wedding1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -237,7 +264,10 @@
     <Compile Include="Models\Codebook\Relationship.cs" />
     <Compile Include="Models\Codebook\Salary.cs" />
     <Compile Include="Models\Codebook\Season.cs" />
+    <Compile Include="Models\Main\Calculation.cs" />
+    <Compile Include="Models\Main\Gift.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Main\Wedding.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
     <Compile Include="Results\ChallengeResult.cs" />
@@ -340,6 +370,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202006141034568_Codebook.resx">
       <DependentUpon>202006141034568_Codebook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006141059143_Gift.resx">
+      <DependentUpon>202006141059143_Gift.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006141107017_Calculation.resx">
+      <DependentUpon>202006141107017_Calculation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006141110563_Wedding.resx">
+      <DependentUpon>202006141110563_Wedding.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006141209062_Calculation1.resx">
+      <DependentUpon>202006141209062_Calculation1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006141233116_Calculation2.resx">
+      <DependentUpon>202006141233116_Calculation2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006141516190_Wedding1.resx">
+      <DependentUpon>202006141516190_Wedding1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
